@@ -15,6 +15,7 @@ import static com.elasticsearchvideo.constants.KafkaConstants.TOPIC_CREATE_ORDER
 @Slf4j
 public class FileMetadataService implements IFileMetadataService {
     private final FileMetadataElasticSearchRepository fileMetadataElasticSearchRepository;
+
     @KafkaListener(topics = TOPIC_CREATE_ORDER, groupId = KAFKA_CONSUMER_GROUP_ID, properties = {"spring.json.value.default.type=com.elasticsearchvideo.dto.FileMetadataDTO"})
     @Override
     public FileMetadataDTO save(FileMetadataDTO fileMetadataDTO) {
