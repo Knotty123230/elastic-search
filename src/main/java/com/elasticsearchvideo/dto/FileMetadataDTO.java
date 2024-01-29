@@ -20,4 +20,7 @@ public class FileMetadataDTO {
     private String header;
     @Field(type = FieldType.Text)
     private String description;
+    private Long size;
+    private String name;
+    private String httpContentType;
 }
