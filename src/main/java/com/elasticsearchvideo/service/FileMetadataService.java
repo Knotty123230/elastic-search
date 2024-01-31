@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 import static com.elasticsearchvideo.constants.KafkaConstants.KAFKA_CONSUMER_GROUP_ID;
 import static com.elasticsearchvideo.constants.KafkaConstants.TOPIC_CREATE_ORDER;
 
+/**
+ * The type File metadata service.
+ */
 @Service
 @RequiredArgsConstructor
 @Slf4j

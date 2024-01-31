@@ -9,10 +9,18 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * The type Video search.
+ */
 @Service
 public class VideoSearch implements Search {
     private final FileMetadataElasticSearchRepository repository;
 
+    /**
+     * Instantiates a new Video search.
+     *
+     * @param repository the repository
+     */
     public VideoSearch(FileMetadataElasticSearchRepository repository) {
         this.repository = repository;
     }
