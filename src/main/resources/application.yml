@@ -13,6 +13,11 @@ spring:
           json:
             trusted:
               packages: '*'
+  elasticsearch:
+    uris: http://localhost:9200
+    username: elastic
+    password:
+
 
 
 topic:

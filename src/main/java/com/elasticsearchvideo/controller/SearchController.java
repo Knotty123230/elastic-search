@@ -3,7 +3,6 @@ package com.elasticsearchvideo.controller;
 
 import com.elasticsearchvideo.dto.FileMetadataDTO;
 import com.elasticsearchvideo.service.Search;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +16,12 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/search")
-@RequiredArgsConstructor
 public class SearchController {
     private final Search search;
+
+    public SearchController(Search search) {
+        this.search = search;
+    }
 
     /**
      * Gets search.
